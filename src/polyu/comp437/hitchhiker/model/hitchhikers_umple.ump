@@ -1,0 +1,45 @@
+namespace polyu.comp437.hitchhiker.model; 
+
+class Car
+{
+  Integer id;
+  make;
+  Integer year;
+}
+
+class Driver
+{
+  username;
+  firstName;
+  lastName;
+  Date dateOfBirth;
+  char gender;
+  address;
+  licenseID;
+  password;
+}
+
+
+class Trip
+{
+  Date date;
+   departureCity;
+  Time startTime;
+  Integer tripID;
+* -> 1 Driver driver; 
+  1 -> 1 Car car; 
+  }
+
+class Hitchhiker
+{
+  username;
+  password;
+  firstName;
+  lastName;
+  Date dateOfBirth;
+  char gender;
+  address;
+  * -> 1 Trip trip; 
+  
+}
+
